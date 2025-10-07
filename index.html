@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Антипов Иван - Full-stack разработчик</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/translations.js" defer></script>
+    <script src="js/i18n.js" defer></script>
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="container">
+            <h1>Ant1Van</h1>
+            <p class="subtitle" data-i18n="subtitle"></p>
+            <button class="cta-button" onclick="scrollToPortfolio()" data-i18n="cta-button"></button>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 data-i18n="about-title"></h2>
+            <p data-i18n="about-text"></p>
+            <div class="skills" id="skill-tags">
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">HTML/CSS</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 data-i18n="portfolio-title"></h2>
+            
+            <!-- Проект 1 - Коммерческий -->
+            <div class="project-card commercial">
+                <div class="project-image">
+                    <img src="img/exlauncher/main.jpg" alt="ExLauncher - Main Screen">
+                    <div class="commercial-badge" data-i18n="project1-badge"></div>
+                </div>
+                <div class="project-info">
+                    <h3 data-i18n="project1-title"></h3>
+                    <p class="project-subtitle" data-i18n="project1-subtitle"></p>
+        
+                    <div class="project-description">
+                        <p data-i18n="project1-description"></p>
+                    </div>
+
+                    <div class="project-features">
+                        <h4 data-i18n="project1-features-title"></h4>
+                        <ul data-i18n="project1-features"></ul>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <span>C#</span>
+                        <span>React</span>
+                        <span>WebView2</span>
+                        <span>7z SDK</span>
+                        <span>WinForms</span>
+                        <span>INI Config</span>
+                    </div>
+
+                    <div class="project-architecture">
+                        <h4 data-i18n="project1-arch-title"></h4>
+                        <ul data-i18n="project1-arch"></ul>
+                    </div>
+
+                    <div class="future-plans">
+                        <h4 data-i18n="project1-future-title"></h4>
+                        <ul data-i18n="project1-future"></ul>
+                    </div>
+
+                    <div class="project-status">
+                        <div class="status-bar">
+                            <div class="status-progress" style="width: 70%"></div>
+                        </div>
+                        <p><span data-i18n="project1-status"></span> <strong data-i18n="project1-complete"></strong></p>
+                    </div>
+
+                    <div class="project-links">
+                        <button class="btn" onclick="showExLauncherDemo()" data-i18n="project1-screenshots"></button>
+                        <div class="commercial-notice">
+                            <small data-i18n="project1-notice"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Проект 2 - Фотоальбом -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/photoalbum/project1.jpg" alt="Interactive Photo Album">
+                </div>
+                <div class="project-info">
+                    <h3 data-i18n="project2-title"></h3>
+                    <p data-i18n="project2-description"></p>
+                    
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Audio API</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://memories-forever-2025.netlify.app/" class="btn btn-primary" target="_blank" data-i18n="view-demo"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Проект 3 - База данных -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/data-base/project2.jpg" alt="Database Management System">
+                </div>
+                <div class="project-info">
+                    <h3 data-i18n="project3-title"></h3>
+                    <p class="project-subtitle" data-i18n="project3-subtitle"></p>
+        
+                    <div class="project-description">
+                        <p data-i18n="project3-description"></p>
+                    </div>
+
+                    <div class="project-features">
+                        <h4 data-i18n="project3-features-title"></h4>
+                        <ul data-i18n="project3-features"></ul>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <span>C#</span>
+                        <span>WinForms</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Bootstrap</span>
+                    </div>
+
+                    <div class="project-architecture">
+                        <h4 data-i18n="project3-arch-title"></h4>
+                        <ul data-i18n="project3-arch"></ul>
+                    </div>
+
+                    <div class="project-status">
+                        <div class="status-bar">
+                            <div class="status-progress" style="width: 100%"></div>
+                        </div>
+                        <p><span data-i18n="project1-status"></span> <strong data-i18n="project3-complete"></strong></p>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Ant1Van/csharp-db-app" class="btn" target="_blank" data-i18n="view-code"></a>
+                        <a href="https://github.com/Ant1Van/php-interface" class="btn" target="_blank">GitHub PHP</a>
+                        <div class="project-grade">
+                            <small data-i18n="project3-grade"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Проект 4 - Сайт-портфолио -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/portfolio/main.jpg" alt="Portfolio Website">
+                </div>
+                <div class="project-info">
+                    <h3 data-i18n="project4-title"></h3>
+                    <p class="project-subtitle" data-i18n="project4-subtitle"></p>
+        
+                    <div class="project-description">
+                        <p data-i18n="project4-description"></p>
+                    </div>
+
+                    <div class="project-features">
+                        <h4 data-i18n="project4-features-title"></h4>
+                        <ul data-i18n="project4-features"></ul>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Flexbox</span>
+                        <span>CSS Grid</span>
+                        <span>Netlify</span>
+                        <span>Git</span>
+                    </div>
+
+                    <div class="project-architecture">
+                        <h4 data-i18n="project4-arch-title"></h4>
+                        <ul data-i18n="project4-arch"></ul>
+                    </div>
+
+                    <div class="performance-metrics">
+                        <h4 data-i18n="project4-metrics-title"></h4>
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">98</span>
+                                <span class="metric-label" data-i18n="metrics-performance"></span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">100</span>
+                                <span class="metric-label" data-i18n="metrics-accessibility"></span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">96</span>
+                                <span class="metric-label" data-i18n="metrics-practices"></span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">95</span>
+                                <span class="metric-label" data-i18n="metrics-seo"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://ant1van-portfolio.netlify.app" class="btn btn-primary" target="_blank" data-i18n="view-demo"></a>
+                        <div class="project-update">
+                            <small data-i18n="project4-last-update"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <footer id="contacts" class="contacts">
+        <div class="container">
+            <h2 data-i18n="contacts-title"></h2>
+            <div class="contact-links">
+                <a href="https://t.me/ant1van" class="contact-link" target="_blank">Telegram</a>
+                <a href="https://github.com/Ant1Van" class="contact-link" target="_blank">GitHub</a>
+                <a href="https://mail.yandex.ru/compose?mailto=ant1p0v.1v@yandex.ru" class="contact-link" target="_blank">Yandex mail</a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=antipow.iwan2018@gmail.com" class="contact-link" target="_blank">Gmail</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
